@@ -1,1 +1,5 @@
-This file serves as an introduction to your Knowledge Base, it is displayed on the homepage of your website. Use it to provide more context to your visitors.
+Nothing like knowledge, they are so pure, so wonderful.
+
+People often use it to create everything they need.
+
+I'm part of that.
