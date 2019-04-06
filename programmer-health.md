@@ -6,7 +6,7 @@ ___
 
 ### Keep away from `spondylosis`
 
-1. Makeing sure you have strong `Lumbar muscles` by Exercise.
+###### 1. Make sure you have strong `Lumbar muscles` by Exercise.
 
 ```
 1. get down on the bed
@@ -14,4 +14,4 @@ ___
 3. repeat until you satisfied
 ```
 
-2. Using `Ergonomic Office Chairs or Desks`
+###### 2. Using `Ergonomic Office Chairs or Desks`
