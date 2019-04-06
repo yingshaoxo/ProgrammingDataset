@@ -49,7 +49,7 @@ UUID=b9420599-3f79-45a9-ba1e-5b1c0f328ad2      none            swap      sw     
 UUID=F86D2571D5F6048B /media/data               ntfs    errors=remount-ro,auto,exec,rw,user 0       0
 ```
 
-> fstab can also be used to mount a disk before get into OS
+> fstab can also be used to mount a disk before getting into OS
 
 ____
 
