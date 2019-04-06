@@ -28,7 +28,7 @@ grub-install --boot-directory=/mnt/linux /dev/sdX
 ___
 
 
-#### Increasing the `memory`
+#### Increase the `memory`
 
 ###### Check the current status:
 ```
