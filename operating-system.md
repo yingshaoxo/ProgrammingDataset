@@ -18,7 +18,7 @@ ___
 
 4. Reset grub:
 ```
-sudo -i
+sudo su
 fdisk -l
 mkdir linux
 mount /dev/sdX /mnt/linux
