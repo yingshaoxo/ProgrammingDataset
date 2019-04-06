@@ -14,9 +14,11 @@ ___
 
 2. Go to `root shell`
 
-3. Reload for writing: `mount -o remount,rw /`
+3. Repair broken disk: `fsck /dev/sbX`
 
-4. Reset grub:
+4. Reload for writing: `mount -o remount,rw /`
+
+5. Reset grub:
 ```
 sudo su
 fdisk -l
