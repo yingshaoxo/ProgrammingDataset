@@ -27,6 +27,21 @@ mount /dev/sdX /mnt/linux
 #update-grub
 grub-install --boot-directory=/mnt/linux /dev/sdX
 ```
+
+___
+
+
+#### Force to stop when you shutdown your system
+
+```
+vim /etc/systemd/system.conf
+```
+
+modify a line in it:
+```
+DefaultTimeoutStopSec=5s
+```
+
 ___
 
 
