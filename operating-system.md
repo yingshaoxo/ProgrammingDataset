@@ -31,20 +31,6 @@ grub-install --boot-directory=/mnt/linux /dev/sdX
 ___
 
 
-#### Force to stop when you shutdown
-
-```
-vim /etc/systemd/system.conf
-```
-
-modify a line in it:
-```
-DefaultTimeoutStopSec=5s
-```
-
-___
-
-
 #### Increase the `memory`
 
 ###### Check the current status:
