@@ -31,7 +31,7 @@ grub-install --boot-directory=/mnt/linux /dev/sdX
 ___
 
 
-#### Force to stop when you shutdown your system
+#### Force to stop when you shutdown
 
 ```
 vim /etc/systemd/system.conf
