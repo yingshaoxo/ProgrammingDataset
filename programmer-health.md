@@ -1,10 +1,10 @@
 Everyone says: your body is the basic thing you need to care.
 
-I used to ignore that, but now I wake: you can't work with a damaged computer. It's the same thing for you in real life, you can't work with a damaged body.
+I used to ignore that, but now I'm waked up: you can't work with a damaged computer. It's the same thing for you in real life, you can't work with a damaged body.
 
 ___
 
-### Keep away from `spondylosis`
+### Stay away from `spondylosis`
 
 ###### 1. Make sure you have strong `Lumbar muscles` by Exercise.
 

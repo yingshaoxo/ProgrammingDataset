@@ -8,13 +8,13 @@ https://medium.com/@yingshaoxo/become-a-master-of-ubuntu-system-installation-71f
 
 ___
 
-#### Recovery or Fix problem for broken system 
+#### Recovery or Fix problem for a broken system 
 
 1. Go to `recovery mode`
 
 2. Go to `root shell`
 
-3. Repair broken disk: `fsck /dev/sbX`
+3. Repair the broken disk: `fsck /dev/sbX`
 
 4. Reload for writing: `mount -o remount,rw /`
 
@@ -38,9 +38,9 @@ ___
 sudo swapon --show
 ```
 
-###### Create a swap type partition, then modify `/etc/fstab` similar to the following:
+###### Create a swap type partition, then modify `/etc/fstab` as the following:
 ```
-# Use 'blkid' to print the universally unique identifier for a device
+# Use 'blkid' to print the universally unique identifier for each device
 
 # the system itself
 UUID=514a9b60-d9b4-4108-bd7a-97c61b9aafc9 /               ext4    errors=remount-ro 0       1
@@ -52,7 +52,7 @@ UUID=b9420599-3f79-45a9-ba1e-5b1c0f328ad2      none            swap      sw     
 UUID=F86D2571D5F6048B /media/data               ntfs    errors=remount-ro,auto,exec,rw,user 0       0
 ```
 
-> fstab can also be used to mount a disk before getting into OS
+> fstab can also be used to mount a disk before getting into an OS
 
 ____
 
