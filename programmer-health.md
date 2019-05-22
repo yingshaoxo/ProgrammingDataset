@@ -1,6 +1,6 @@
 Everyone says: your body is the basic thing you need to care.
 
-I used to ignore that, but now I'm waked up: you can't work with a damaged computer. It's the same thing for you in real life, you can't work with a damaged body.
+I used to ignore that, but now I'm waked up: you can't work with a damaged computer. It's the same thing for your body in real life, you can't work with a damaged body.
 
 ___
 
@@ -15,3 +15,10 @@ ___
 ```
 
 ###### 2. Using `Ergonomic Office Chairs or Desks`
+
+___
+
+### Make your brain active
+
+1. Drinking water regularly.
+2. Get enough nutrition. (For example, Eat vitamins).
