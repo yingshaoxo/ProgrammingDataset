@@ -7,3 +7,5 @@
 4. Write logs for your application instead of just print it out: the logs must contain every information from program start to program end.
 
 5. Write tests for every function in your application. You don't want to check those function again and again by yourself. Just let the machine do that job for you. 
+
+6. Use `Pipe` for multiprocessing communication, use `queue` for multithreading communication.
