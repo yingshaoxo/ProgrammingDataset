@@ -9,7 +9,7 @@
 
 ## Less important
 
-* If you could design a package with binary, don't do it with codes \(unless it can compile to binary, like c, c++, golang, cython\). You will gradually know that only binary files could be used at every platform or machine without too much worry about dependencies.
+* If you could design a package with binary, don't do it with codes \(unless it can compile to binary, like c, c++, golang, cython, rust\). You will gradually know that only binary files could be used at every platform or machine without too much worry about dependencies.
 * Write logs for your application instead of just print it out: the logs must contain every information from the program start to program end.
 * Use `Pipe` for multiprocessing communication, use `queue` for multithreading communication.
 
