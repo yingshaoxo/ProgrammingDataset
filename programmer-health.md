@@ -20,4 +20,5 @@ I used to ignore that, but now I'm waked up: you can't work with a damaged compu
 
 1. Drinking water regularly.
 2. Get enough nutrition. \(For example, Eat vitamins\).
+3. Think and Learn. \(Think about what you need and learn it\) 
 
