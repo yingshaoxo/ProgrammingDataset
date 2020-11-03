@@ -6,4 +6,6 @@
 * [Operating System](operating-system/README.md)
   * [Manjaro](operating-system/manjaro.md)
 * [Design Principle](design-principle.md)
+* [Algorithm](algorithm.md)
+* [Problem Solving](problem-solving.md)
 
