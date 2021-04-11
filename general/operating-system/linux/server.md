@@ -2,6 +2,15 @@
 
 ## Allow a server to use a password to do an ssh login
 
+install ssh server: `sudo apt-get install openssh-server`
+
+enable and start the ssh service: 
+
+```text
+sudo systemctl enable ssh
+sudo systemctl start ssh
+```
+
 go to `/etc/ssh/sshd_config` 
 
 replace old commands to:
