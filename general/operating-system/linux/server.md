@@ -30,5 +30,14 @@ restart the ssh service: `sudo service ssh restart`
 ssh-copy-id pi@192.168.49.17
 ```
 
+## Disable password login
 
+```text
+PermitRootLogin yes
+PasswordAuthentication no
+UsePAM no
+ChallengeResponseAuthentication no
+```
+
+restart the ssh service: `sudo systemctl reload ssh`
 
