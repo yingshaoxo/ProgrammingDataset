@@ -8,8 +8,8 @@ I used to ignore that, but now I'm waked up: you can't work with a damaged compu
 
 ### 1. Make sure you have strong `Lumbar muscles` by Exercise.
 
-```text
-1. get down on the bed
+```
+1. face towards ground, get down on the bed
 2. put your hands and legs up and down
 3. repeat until you satisfied
 ```
@@ -19,6 +19,5 @@ I used to ignore that, but now I'm waked up: you can't work with a damaged compu
 ## Make your brain active
 
 1. Drinking water regularly.
-2. Get enough nutrition. \(For example, Eat vitamins\).
-3. Think and Learn. \(Think about what you need and learn it\) 
-
+2. Get enough nutrition. (For example, Eat vitamins).
+3. Think and Learn. (Think about what you need and learn it)&#x20;

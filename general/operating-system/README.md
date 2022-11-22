@@ -10,28 +10,28 @@
 2. Go to `root shell`
 3. Repair the broken disk: `fsck /dev/sbX`
 4. Reload for writing: `mount -o remount,rw /`
-5. Reset grub:
+5.  Reset grub:
 
-   ```text
-   sudo su
-   fdisk -l
-   mkdir linux
-   mount /dev/sdX /mnt/linux
-   #update-grub
-   grub-install --boot-directory=/mnt/linux /dev/sdX
-   ```
+    ```
+    sudo su
+    fdisk -l
+    mkdir linux
+    mount /dev/sdX /mnt/linux
+    #update-grub
+    grub-install --boot-directory=/mnt/linux /dev/sdX
+    ```
 
 ## Increase the `memory`
 
 ### Check the current status:
 
-```text
+```
 sudo swapon --show
 ```
 
 ### Create a swap type partition, then modify `/etc/fstab` as the following:
 
-```text
+```
 # Use 'blkid' to print the universally unique identifier for each device
 
 # the system itself
@@ -46,3 +46,14 @@ UUID=F86D2571D5F6048B /media/data               ntfs    errors=remount-ro,auto,e
 
 > fstab can also be used to mount a disk before getting into an OS
 
+## User System
+
+Login with username and password: `login your_username`
+
+Change password: `passwd your_username`
+
+Get into the root user's shell: `sudo -s` or `sh -s` or `sudo su` or `login root`
+
+Create a user: `useradd your_username`
+
+> Remember, you should always check if you have the root permission or not when you got a new device. Because that's important.
