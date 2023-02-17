@@ -21,6 +21,21 @@
     grub-install --boot-directory=/mnt/linux /dev/sdX
     ```
 
+
+
+> If you can't get into the root shell by going in from recovery-mode, in grub shell, you can try:
+>
+> ```
+> ls
+> set root=(hd0,msdos1)
+> insmod normal
+> normal
+> insmod linux
+> linux /boot/vmlinuz-3.13.0-29-generic root=/dev/sda1
+> initrd /boot/initrd.img-3.13.0-29-generic
+> boot
+> ```
+
 ## Increase the `memory`
 
 ### Check the current status:
