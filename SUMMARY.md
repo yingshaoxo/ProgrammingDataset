@@ -11,6 +11,6 @@
     * [Linux](general/operating-system/linux/README.md)
       * [Server](general/operating-system/linux/server.md)
     * [Manjaro](general/operating-system/manjaro.md)
+    * [Virtual Ubuntu](general/operating-system/virtual-ubuntu.md)
 * [Computer Vision](computer-vision/README.md)
   * [OpenCV](computer-vision/opencv.md)
-
