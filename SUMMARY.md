@@ -16,3 +16,4 @@
   * [OpenCV](computer-vision/opencv.md)
 * [Database Design](database-design/README.md)
   * [Mongodb\_Like Database](database-design/mongodb\_like-database.md)
+  * [Mongodb\_Like Database (Version 2)](database-design/mongodb\_like-database-version-2.md)
