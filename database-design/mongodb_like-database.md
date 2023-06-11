@@ -101,3 +101,7 @@ def edit_record(database_file, record_id, field_name, new_value):
     # Write the updated line back to the database file.
     f.write(line)
 ```
+
+## For multi\_process&#x20;
+
+You can write a queue to handle those request. Which can make sure your database is safe under multi\_process usage.
