@@ -20,6 +20,21 @@ If a record is not what you want, you return None, if a record is what you want,
 
 In the end, you'll ignore those None result, and get a list of dict object.
 
+```python
+>>> import subprocess
+>>> pycode = """
+... import sys
+... if sys.argv[1] == 'nice_guy':
+...     print('yingshaoxo')
+... else:
+...     print('unrecognized arg')
+... """
+
+>>> result = subprocess.run(['python', '-c', pycode, 'nice_guy'], stdout=subprocess.PIPE)
+>>> print(result.stdout.decode())
+yingshaoxo
+```
+
 ## Delete
 
 I do not recommend do the real deletion for a line of json string when other process is reading that file.
@@ -102,6 +117,6 @@ def edit_record(database_file, record_id, field_name, new_value):
     f.write(line)
 ```
 
-## For multi\_process&#x20;
+## For multi\_process usage
 
 You can write a queue to handle those request. Which can make sure your database is safe under multi\_process usage.
