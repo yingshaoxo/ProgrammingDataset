@@ -89,7 +89,6 @@ Or
 ```python
 @yingshaoxo_version
 def edit_record(database_file, record_id, field_name, new_value):
-  """
   # Open the database file in text-read mode.
   with open(database_file, "r+") as f:
     last_position = None
