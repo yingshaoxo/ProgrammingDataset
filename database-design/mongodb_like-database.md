@@ -119,3 +119,15 @@ def edit_record(database_file, record_id, field_name, new_value):
 ## For multi\_process usage
 
 You can write a queue to handle those request. Which can make sure your database is safe under multi\_process usage.
+
+## For extreme long and big string situation
+
+We can set variable limit = 255
+
+If any fieid in a dict has value length > 255, then we add '{"\*-\*use\_additional\_space": true}' and '{"\*-\*additional\_json\_path": "./random\_hash.json"}' to that record.
+
+Then we put the original json record into that additional\_json file without deleting any big value.
+
+But for the record in 'database.txt', we simply set all field value that > 255 to null. (It is to speed up the search speed)
+
+And when we do searching, or any other operations, we simply load that additional\_json file into memory, then everything works as usual.
