@@ -41,79 +41,51 @@ I do not recommend do the real deletion for a line of json string when other pro
 
 I would recommend you to use some special tech to do it:
 
-* method 1: add '#' symbol at the begnning of a line to indicate it is a deleted line
-* method 2: add '{"deleted": true}' in the json object of that line to indicate it is a deleted record
+Add '#' symbol at the begnning of a line to indicate it is a deleted line.
+
+> You can do it by replace the first character of a line with '#' symbol
 
 ## Edit
 
-One way is to delete the old line of record, and add a new one at the bottom of that \`database.txt\` file.
+Simply delete the old line of record, and add a new one at the bottom of that \`database.txt\` file.
 
-Another way is to use bytes seek tech, I could show you in code:
-
-```python
-def edit_record(database_file, record_id, field_name, new_value):
-  """
-  Edits the record with the given ID in the given database file.
-
-  Args:
-    database_file: The path to the database file.
-    record_id: The ID of the record to edit.
-    field_name: The name of the field to update.
-    new_value: The new value for the field.
-
-  Returns:
-    None.
-  """
-
-  # Open the database file in read-write mode.
-  # r+ means reading and writing the file.
-  with open(database_file, "r+") as f:
-
-    # Find the line that contains the record to edit.
-    for line in f:
-      if record_id in line:
-        break
-
-    # Seek to the beginning of the line that contains the record to edit.
-    f.seek(f.tell() - len(line))
-
-    # Update the value of the field in the record.
-    line = line.replace(field_name, new_value)
-
-    # Write the updated line back to the database file.
-    f.write(line)
-```
-
-Or
+Another way is to use bytes seek tech, but it is limitations, it can only be used on limit size record data, in other words, every row should have same length:
 
 ```python
-@yingshaoxo_version
-def edit_record(database_file, record_id, field_name, new_value):
-  # Open the database file in text-read mode.
-  with open(database_file, "r+") as f:
-    last_position = None
-    while True:
-      current_position = f.tell()
-      line = f.readline()
-      
-      if (last_position == current_position):
-        # Reach the end of the file
-        break
-        
-      last_position = current_position
-          
-      # Find the line that contains the record to edit.
-      if record_id in line:
-        break
-        
-    # Replace the field in the record with the new value.
-    line = line.replace(field_name, new_value)
-    
-    # Go back the the begining of that record string
-    f.seek(last_position)
+def delete(self, one_row_dict_filter: Callable[[dict[str, Any]], bool]):
+    """
+    one_row_dict_filter: a_function to handle deletion process. If it returns False, we'll ignore it, otherwise, if it is True, we'll delete that row of data.
+    """
+    with open(self.database_txt_file_path, "r+") as file_stream:
+        end_detection_counting = 1
+        old_position_pair = None
+        while True:
+            previous_position = file_stream.tell()
+            line = file_stream.readline()
+            current_position = file_stream.tell()
 
-    # Write the updated line back to the database file.
-    f.write(line)
+            new_position_pair = (previous_position, current_position)
+            #print(new_position_pair)
+            if old_position_pair == new_position_pair:
+                end_detection_counting += 1 
+            else:
+                old_position_pair = new_position_pair
+            if end_detection_counting >= 3:
+                # We could make sure it is the end of the file
+                old_position_pair = None
+                break
+
+            if (line.strip() == ""):
+                # ignore empty line
+                continue
+
+            json_dict = self._json.loads(line)
+            result = one_row_dict_filter(json_dict)
+            #print(result)
+            if (result == True):
+                # replace the old line into space
+                file_stream.seek(previous_position)
+                file_stream.write((" "*(len(line)-1)) + "\n")
 ```
 
 ## For multi\_process usage
