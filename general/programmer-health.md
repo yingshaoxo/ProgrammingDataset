@@ -16,6 +16,12 @@ I used to ignore that, but now I'm waked up: you can't work with a damaged compu
 
 ### 2. Using `Ergonomic Office Chairs or Desks`
 
+## Eat healthy food
+
+1. Use rice cooker for rice cooking.
+2. Use micro\_wave\_oven for wet food.
+3. Use electric\_oven for dry food.
+
 ## Make your brain active
 
 1. Drinking water regularly.
